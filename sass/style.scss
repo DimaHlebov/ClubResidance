@@ -55,7 +55,6 @@ ul{
             position: relative;
             cursor: pointer;
             padding-bottom: 10px;
-            
             border-bottom: 1px solid $primary-c;
             transition: all 0.5s;
             &:hover{
@@ -95,7 +94,7 @@ ul{
             position: absolute;
             bottom: 8px;
             right: 8px;
-            content: "\e900";
+            content: "\e904";
             font-family: $font-icomoon !important;
         }
     }
@@ -202,7 +201,7 @@ ul{
         color: #212224;
     }
 }
-// Round badges(pages) and arrows
+// Round badges(pages) and h-arrows
 .slider-btns{
     display: flex;
     &--margin-t-116{
@@ -235,7 +234,7 @@ ul{
                     opacity: 1;
                 }
         }
-        .arrows button .arrows__item{
+        .h-arrows button .h-arrows__item{
                 background-color: #757575;
                 &--left:before{
                     border-right-color: #757575;
@@ -246,7 +245,7 @@ ul{
             }
     }
 }
-.arrows{
+.h-arrows{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -258,7 +257,7 @@ ul{
         &:first-child{
             margin-left: 0;
         }
-        .arrows__item{
+        .h-arrows__item{
             padding: 0;
             height: 1px;
             position: relative;
@@ -372,13 +371,28 @@ ul{
     display: flex;
 }
 
+.v-arrows{
+    color: #757575;
+    margin-top: 75px;
+    &__item{
+        width: 10px;
+        &:last-child{
+            margin-top: 32px;
+        }
+        cursor: pointer;
+        &--selected{
+            color: $primary-c;
+        }
+    }
+}
+
 .nav{
-    padding-left: 58px;
+    padding-left: 57px;
     &--padding-t-gallery{
         padding-top: 57px;
     }
     &--padding-t-layout{
-        padding-top: 241px;
+        padding-top: 179px;
     }
     &--width-gallery{
         min-width: 235px;
@@ -391,7 +405,7 @@ ul{
     }  
     ul{
         list-style: none;
-        padding-left: 0;
+        padding-left: 1px;
         li{
             
             color: #757575;

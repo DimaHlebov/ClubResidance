@@ -33,9 +33,9 @@
                         <span class="badges__item"></span>
                         <span class="badges__item badges__item--unmarked"></span>
                     </div>
-                    <div class="arrows">
-                        <button class="outline-none"><span class="arrows__item arrows__item--left shadow-red" ></span></button>
-                        <button class="outline-none"><span class="arrows__item arrows__item--right shadow-red"></span></button>
+                    <div class="h-arrows">
+                        <button class="outline-none"><span class="h-arrows__item h-arrows__item--left shadow-red" ></span></button>
+                        <button class="outline-none"><span class="h-arrows__item h-arrows__item--right shadow-red"></span></button>
                     </div>
                 </div>
                 <div class="slide-footer">
@@ -58,6 +58,14 @@
                     <li><span class="bullet"></span></li>
                     <li><span class="bullet"></span></li>
                 </ul>
+                <div class="v-arrows">
+                    <div class="v-arrows__item v-arrows__item--selected">
+                        <span aria-hidden="true" data-icon="&#xe900"></span>
+                    </div>
+                    <div class="v-arrows__item">
+                        <span aria-hidden="true" data-icon="&#xe901"></span> 
+                    </div>
+                </div>
             </nav>
             <img src="img/slider/slide1.jpg" alt="picture" class="picture">
         </div>
@@ -90,7 +98,7 @@
     </section>
     <div class="layout-documents-wrapper">
         <section class="layout">
-            <div class="nav-wrapper">
+                <div class="nav-wrapper">
                 <nav class="nav nav--padding-t-layout nav--width-layout">
                     <ul>
                         <li><span class="bullet"></span></li>
@@ -98,14 +106,32 @@
                         <li><span class="bullet bullet--selected"></span>планировки</li>
                         <li><span class="bullet"></span></li>
                     </ul>
+                    <div class="v-arrows">
+                        <div class="v-arrows__item v-arrows__item--selected">
+                            <span aria-hidden="true" data-icon="&#xe900"></span>
+                        </div>
+                        <div class="v-arrows__item">
+                            <span aria-hidden="true" data-icon="&#xe901"></span> 
+                        </div>
+                    </div>
                 </nav>
                 <div class="layout-wrapper">
                     <h2 class="title title--black">Планировки</h2>
                     <div class="flat">
-                        <div class="tabs tabs--layout-theme">
-                            <button class="tabs__item tabs__item--selected">КЛУБНЫЙ ДОМ</button>
-                            <button class="tabs__item">КЛАБ РЕЗИДЕНС</button>
-                        </div>
+                        <ul class="tabs tabs--layout-theme">
+                            <li class="tabs__item tabs__item--selected">1кімнатні</li>
+                            <ul class="tabs">
+                                <li class="tabs__item">36.05м<sup>2</sup></li>
+                                <li class="tabs__item">37.84м<sup>2</sup></li>
+                                <li class="tabs__item">40.41м<sup>2</sup></li>
+                                <li class="tabs__item">41.99м<sup>2</sup></li>
+                                <li class="tabs__item">43.18м<sup>2</sup></li>
+                                <li class="tabs__item">44.91м<sup>2</sup></li>
+                            </ul>
+                            <li class="tabs__item">2кімнатні</li>
+                            <li class="tabs__item">3кімнатні</li>
+                            <li class="tabs__item">3 терасами</li>
+                        </ul>
                     </div>
                 </div>
             </div>

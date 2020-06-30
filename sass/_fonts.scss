@@ -1,11 +1,18 @@
 // icomoon
-@font-face{
-  font-family: 'icomoon';
-  src: url('../fonts/icomoon/icomoon.eot?icedge');
-  src: url('../fonts/icomoon/icomoon.eot?icedge#iefix') format('embedded-opentype'),url('../fonts/icomoon/icomoon.ttf?icedge') format('truetype'),url('../fonts/icomoon/icomoon.woff?icedge') format('woff'),url('../fonts/icomoon/icomoon.svg?icedge#icomoon') format('svg');
-  font-weight: normal;
-  font-style: normal;
-  font-display: block;
+@font-face {
+    font-family: "icomoon";
+    src: url("../fonts/icomoon/fonts/icomoon.eot");
+    src: url("../fonts/icomoon/fonts/icomoon.eot?#iefix") format("embedded-opentype"), url("../fonts/icomoon/fonts/icomoon.woff")
+        format("woff"), url("../fonts/icomoon/fonts/icomoon.ttf") format("truetype"), url("../fonts/icomoon/fonts/icomoon.svg#icomoon")
+        format("svg");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+[data-icon]:before {
+    font-family: 'icomoon'; 
+    content: attr(data-icon);
+    speak: none;
 }
 // HelveticaNeueCyr
 @font-face{
