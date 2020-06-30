@@ -12,30 +12,107 @@
         <img src="icons/club-residance-logo.svg" alt="logo" class="logo-cr">
         <div class="header"> 
             <div class="call">
-                <button class="btn btn--phone"></button>
+                <button class="round-btn round-btn--phone shadow-red"></button>
                 <div class="number-wrapper">
                     <div class="call__number">8 (800) 77-512-77</div>
-                    <div class="call__request"><p>Заказать звонок</p></div>
+                    <button class="call__request shadow-red"><p>Заказать звонок</p></button>
                 </div>
             </div>
             <div class="language">
-                <button class="btn btn--color-white">UA</button>
+                <button class="round-btn round-btn--color-white shadow-red">UA</button>
             </div>
         </div>
-        <div class="complex">
-            <div class="complex-number"></div>
-            <div class="complex-wrapper">
+        <div class="slider-wrapper">
+            <div class="pages"></div>
+            <div class="complex">
                 <h1 class="complex__name">Жилой комплекс КЛАБ РЕЗИДЕНС</h1>
                 <h2 class="title">Квартиры уже</br>в продаже!</h2>
-                <button class="complex__about">О КОМПЛЕКСЕ</button>
-                <div class="slider-buttons">
-                    <span class="badge"></span>
-                    <span class="badge"></span>
-                    <button class="arrow"></button>
-                    <button class="arrow"></button>
+                <button class="complex__about shadow-red">О КОМПЛЕКСЕ</button>
+                <div class="slider-btns slider-btns--margin-t-116">
+                    <div class="badges">
+                        <span class="badges__item"></span>
+                        <span class="badges__item badges__item--unmarked"></span>
+                    </div>
+                    <div class="arrows">
+                        <button class="outline-none"><span class="arrows__item arrows__item--left shadow-red" ></span></button>
+                        <button class="outline-none"><span class="arrows__item arrows__item--right shadow-red"></span></button>
+                    </div>
+                </div>
+                <div class="slide-footer">
+                    <div class="location">
+                        <div class="addres">Киев, переулок Радистов, 14а</div>
+                        <div class="subway">ЛЕСНАЯ</div>
+                    </div>
+                    <img class="emblem" src="icons/comfort-life.svg" alt="emblem comfort life"/>
                 </div>
             </div>
         </div>
     </section>
+    <section class="gallery">
+        <img src="img/tree.png" alt="tree" class="tree">
+        <div class="nav-wrapper">
+            <nav class="nav nav--padding-t-gallery nav--width-gallery">
+                <ul>
+                    <li><span class="bullet"></span></li>
+                    <li><span class="bullet bullet--selected"></span>ГАЛЕРЕЯ</li>
+                    <li><span class="bullet"></span></li>
+                    <li><span class="bullet"></span></li>
+                </ul>
+            </nav>
+            <img src="img/slider/slide1.jpg" alt="picture" class="picture">
+        </div>
+        <div class="menu">
+            <ul class="tabs">
+                <li class="tabs__item tabs__item--selected">КЛУБНЫЙ ДОМ</li>
+                <li class="tabs__item">КЛАБ РЕЗИДЕНС</li>
+            </ul>
+            <div class="slider-btns slider-btns--gallery-theme">
+                <div class="badges">
+                    <span class="badges__item"></span>
+                    <span class="badges__item badges__item--unmarked"></span>
+                    <span class="badges__item badges__item--unmarked"></span>
+                    <span class="badges__item badges__item--unmarked"></span>
+                    <span class="badges__item badges__item--unmarked"></span>
+                </div>
+                <div class="arrows">
+                    <button class="outline-none"><span class="arrows__item arrows__item--left shadow-red" ></span></button>
+                    <button class="outline-none"><span class="arrows__item arrows__item--right shadow-red"></span></button>
+                </div>
+            </div>
+        </div>
+        <div class="carousel">
+            <img src="img/slider/slide1.jpg" alt="picture of a house" class="carousel__picture carousel__picture--selected">
+            <img src="img/slider/slide2.jpg" alt="picture of a house" class="carousel__picture">
+            <img src="img/slider/slide1.jpg" alt="picture of a house" class="carousel__picture">
+            <img src="img/slider/slide2.jpg" alt="picture of a house" class="carousel__picture">
+            <img src="img/slider/slide1.jpg" alt="picture of a house" class="carousel__picture">
+        </div>
+    </section>
+    <div class="layout-documents-wrapper">
+        <section class="layout">
+            <div class="nav-wrapper">
+                <nav class="nav nav--padding-t-layout nav--width-layout">
+                    <ul>
+                        <li><span class="bullet"></span></li>
+                        <li><span class="bullet"></span></li>
+                        <li><span class="bullet bullet--selected"></span>планировки</li>
+                        <li><span class="bullet"></span></li>
+                    </ul>
+                </nav>
+                <div class="layout-wrapper">
+                    <h2 class="title title--black">Планировки</h2>
+                    <div class="flat">
+                        <div class="tabs tabs--layout-theme">
+                            <button class="tabs__item tabs__item--selected">КЛУБНЫЙ ДОМ</button>
+                            <button class="tabs__item">КЛАБ РЕЗИДЕНС</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <siction class="documents">
+
+        </siction>
+    </div>
 </body>
 </html>

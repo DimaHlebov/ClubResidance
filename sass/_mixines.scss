@@ -1,0 +1,29 @@
+@mixin triangle {
+    content: "";
+    position: absolute;
+    display: block;
+    top: -2.5px;
+    border-top: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+}
+
+@mixin left-triangle {
+    @include triangle;
+    left: -5px;
+    border-right: 5px solid $white-c;
+}
+
+@mixin right-triangle {
+    @include triangle;
+    right: -5px;
+    border-left: 5px solid $white-c;
+}
+
+@mixin bullet-outline {
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: #cfcdcd;
+    border: 0.5px solid $primary-c;
+    border-radius: 50%;
+}
