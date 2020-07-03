@@ -15,7 +15,7 @@
                 <button class="round-btn round-btn--phone shadow-red"></button>
                 <div class="number-wrapper">
                     <div class="call__number">8 (800) 77-512-77</div>
-                    <button class="call__request shadow-red"><p>Заказать звонок</p></button>
+                    <button class="call-request shadow-red"><p>Заказать звонок</p></button>
                 </div>
             </div>
             <div class="language">
@@ -26,7 +26,7 @@
             <div class="pages"></div>
             <div class="complex">
                 <h1 class="complex__name">Жилой комплекс КЛАБ РЕЗИДЕНС</h1>
-                <h2 class="title">Квартиры уже</br>в продаже!</h2>
+                <h2 class="title title--mt-8">Квартиры уже</br>в продаже!</h2>
                 <button class="complex__about shadow-red">О КОМПЛЕКСЕ</button>
                 <div class="slider-btns slider-btns--margin-t-116">
                     <div class="badges">
@@ -70,11 +70,11 @@
             <img src="img/slider/slide1.jpg" alt="picture" class="picture">
         </div>
         <div class="menu">
-            <ul class="tabs">
-                <li class="tabs__item tabs__item--selected">КЛУБНЫЙ ДОМ</li>
-                <li class="tabs__item">КЛАБ РЕЗИДЕНС</li>
+            <ul class="tabs tabs--menu-style">
+                <li><button class="tabs__item tabs__item--first tabs__item--selected">КЛУБНЫЙ ДОМ</button></li>
+                <li><button class="tabs__item">КЛАБ РЕЗИДЕНС</button></li>
             </ul>
-            <div class="slider-btns slider-btns--gallery-theme">
+            <div class="slider-btns slider-btns--primry-c-style slider-btns--gallery-style">
                 <div class="badges">
                     <span class="badges__item"></span>
                     <span class="badges__item badges__item--unmarked"></span>
@@ -82,9 +82,9 @@
                     <span class="badges__item badges__item--unmarked"></span>
                     <span class="badges__item badges__item--unmarked"></span>
                 </div>
-                <div class="arrows">
-                    <button class="outline-none"><span class="arrows__item arrows__item--left shadow-red" ></span></button>
-                    <button class="outline-none"><span class="arrows__item arrows__item--right shadow-red"></span></button>
+                <div class="h-arrows">
+                    <button class="outline-none"><span class="h-arrows__item h-arrows__item--left shadow-red" ></span></button>
+                    <button class="outline-none"><span class="h-arrows__item h-arrows__item--right shadow-red"></span></button>
                 </div>
             </div>
         </div>
@@ -117,21 +117,71 @@
                 </nav>
                 <div class="layout-wrapper">
                     <h2 class="title title--black">Планировки</h2>
-                    <div class="flat">
-                        <ul class="tabs tabs--layout-theme">
-                            <li class="tabs__item tabs__item--selected">1кімнатні</li>
-                            <ul class="tabs">
-                                <li class="tabs__item">36.05м<sup>2</sup></li>
-                                <li class="tabs__item">37.84м<sup>2</sup></li>
-                                <li class="tabs__item">40.41м<sup>2</sup></li>
-                                <li class="tabs__item">41.99м<sup>2</sup></li>
-                                <li class="tabs__item">43.18м<sup>2</sup></li>
-                                <li class="tabs__item">44.91м<sup>2</sup></li>
-                            </ul>
-                            <li class="tabs__item">2кімнатні</li>
-                            <li class="tabs__item">3кімнатні</li>
-                            <li class="tabs__item">3 терасами</li>
+                    <div class="flats">
+                        <ul class="tabs tabs--layout-style">
+                            <li><button class="tabs__item tabs__item--selected">1кімнатні</button>
+                                <ul class="tabs tabs--sub">
+                                    <li><button class="tabs__item">36.05м<sup>2</sup></button></li>
+                                    <li><button class="tabs__item">37.84м<sup>2</sup></button></li>
+                                    <li><button class="tabs__item">40.41м<sup>2</sup></button></li>
+                                    <li><button class="tabs__item">41.99м<sup>2</sup></button></li>
+                                    <li><button class="tabs__item">43.18м<sup>2</sup></button></li>
+                                    <li><button class="tabs__item">44.91м<sup>2</sup></button></li>
+                                </ul>
+                            </li>
+                            <li><button class="tabs__item">2кімнатні</button></li>
+                            <li><button class="tabs__item">3кімнатні</button></li>
+                            <li><button class="tabs__item">3 терасами</button></li>
                         </ul>
+                        <div class="flat-info">
+                            <img src="/img/app-layout.png" alt="app layout" class="flat-info__img">
+                            <div class="flat-params">
+                                <h2 class="title title--black title--s">Квартира 36.05м<sup>2</sup></h2>
+                                <div class="params-wrapper">
+                                    <div class="params">
+                                        <p class="params__item params__item--light">Будинок</p>
+                                        <p class="params__item">15</p>
+                                        <p class="params__item params__item--light">Поверх</p>
+                                        <p class="params__item">4</p>
+                                        <p class="params__item params__item--light">Житлова площа</p>
+                                        <p class="params__item">36.05м<sup>2</sup></p>
+                                        <p class="params__item params__item--light">Загальна площа</p>
+                                        <p class="params__item">36.05м<sup>2</sup></p>
+                                    </div>
+                                    <div class="params">     
+                                        <p class="params__item params__item--light">Спальня</p>
+                                        <p class="params__item">14.56м<sup>2</sup></p>
+                                        <p class="params__item params__item--light">Кухня</p>
+                                        <p class="params__item">17.34м<sup>2</sup></p>
+                                        <p class="params__item params__item--light">Передпокій</p>
+                                        <p class="params__item">14.56м<sup>2</sup></p>
+                                        <p class="params__item params__item--light">Санвузол</p>
+                                        <p class="params__item">17.34м<sup>2</sup></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sales">
+                                <div class="sales-wrapper">
+                                    <p class="contact">Свяжитесь с нами,</br>чтобы узнать больше</p>
+                                    <div class="sales__number"><p>Отдел продаж:</p>(044)  555  57  75</div>
+                                </div>
+                                <button class="call-request call-request--mt call-request--flats-style shadow-red"><p>Заказать звонок</p></button>
+                            </div>
+                            <div class="slider-btns slider-btns--primry-c-style">
+                                <div class="badges">
+                                    <span class="badges__item"></span>
+                                    <span class="badges__item badges__item--unmarked"></span>
+                                    <span class="badges__item badges__item--unmarked"></span>
+                                    <span class="badges__item badges__item--unmarked"></span>
+                                    <span class="badges__item badges__item--unmarked"></span>
+                                    <span class="badges__item badges__item--unmarked"></span>
+                                </div>
+                                <div class="h-arrows">
+                                    <button class="outline-none"><span class="h-arrows__item h-arrows__item--left shadow-red" ></span></button>
+                                    <button class="outline-none"><span class="h-arrows__item h-arrows__item--right shadow-red"></span></button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
