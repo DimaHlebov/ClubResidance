@@ -4,7 +4,6 @@ const leftArrow = document.querySelectorAll('.left-header-arrow');
 const rightArrow = document.querySelectorAll('.right-header-arrow');
 const badges = document.querySelectorAll('.badges')
 
-
 // Arrows
 let sectionIndex = 0;
 Array.from(rightArrow).forEach(arrow => {
